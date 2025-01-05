@@ -1,0 +1,74 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.knowgate</groupId>
+  <artifactId>recursive-file-diff</artifactId>
+  <version>1.0.0</version>
+  <packaging>jar</packaging>
+  <name>recursive-file-diff</name>
+  <description>Compare and align two directory structures with source code</description>
+  <inceptionYear>2021</inceptionYear>
+  <url>https://github.com/sergiomt/recursive-file-diff</url>
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <name>Sergio Montoro Ten</name>
+      <email>sergiom@knowgate.com</email>
+      <organization>Know Gate</organization>
+      <organizationUrl>http://www.knowgate.com</organizationUrl>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:git://github.com/sergiomt/recursive-file-diff.git</connection>
+    <developerConnection>scm:git:ssh://github.com/sergiomt/recursive-file-diff.git</developerConnection>
+    <url>https://github.com/sergiomt/recursive-file-diff</url>
+  </scm>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>2.3.2</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.16</version>
+      </plugin>
+    </plugins>
+  </build>
+  <properties>
+    <skipTests>false</skipTests>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <profiles>
+  </profiles>
+  <repositories>
+  </repositories>
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-core</artifactId>
+      <version>2.8.2</version>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <organization>
+    <name>KnowGate</name>
+  </organization>
+</project>
